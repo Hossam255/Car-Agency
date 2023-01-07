@@ -1,0 +1,8 @@
+@import "../../styles/__variables";
+@import "../../styles/__baseStyles";
+
+[dir="ltr"] {
+  .half-star {
+    transform: scalex(-1);
+  }
+}

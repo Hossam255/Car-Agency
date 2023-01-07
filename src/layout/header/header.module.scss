@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "../../styles/__variables";
+@import "../../styles/__baseStyles";
+
+.header {
+  @include media-breakpoint-down(sm) {
+  }
+}
+
+[dir="ltr"] {
+  .header {
+  }
+  .title {
+    @include media-breakpoint-down(sm) {
+    }
+  }
+}
+[dir="rtl"] {
+}
