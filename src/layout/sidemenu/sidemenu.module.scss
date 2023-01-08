@@ -6,7 +6,18 @@
 
 .sidebar {
   background-color: $lightWhite;
+
   .icons {
+    padding: 0.5rem 0.52rem;
+    cursor: pointer;
+    &:active,
+    &:hover {
+      border-radius: 0.3rem;
+      background-color: $menutGrey;
+    }
+  }
+  .section-two {
+    margin-top: 10rem;
   }
 }
 [dir="ltr"] {
