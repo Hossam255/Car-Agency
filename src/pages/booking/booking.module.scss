@@ -5,16 +5,17 @@
 @import "../../styles/__baseStyles";
 
 .header {
-  background-color: $lightWhite;
-  width: 100%;
   @include media-breakpoint-down(sm) {
-  }
-  .profile-icon {
-    border-radius: 50%;
   }
 }
 
 [dir="ltr"] {
+  .header {
+  }
+  .title {
+    @include media-breakpoint-down(sm) {
+    }
+  }
 }
 [dir="rtl"] {
 }

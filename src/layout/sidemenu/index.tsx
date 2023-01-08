@@ -7,15 +7,15 @@ import { RxDashboard } from "react-icons/rx";
 
 const Sidemenu = () => {
   return (
-    <Container className={` ${Styles["sidebar"]}`} fluid>
+    <Container className={`m-0 p-0 ${Styles["sidebar"]}`} fluid>
       <Row>
         <Col>
-          <div className={` ${Styles["logo"]}`}>
+          <div className={`d-flex mt-2 ${Styles["logo"]}`}>
             <img src="/assets/logo/logo.svg" alt="" />
             <TitleHeader
               text="Motiv."
               type="subtitle"
-              className={` ${Styles["title"]}`}
+              className={`mt-2 ms-2 ${Styles["title"]}`}
             />
           </div>
         </Col>

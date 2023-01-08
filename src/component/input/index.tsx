@@ -22,7 +22,10 @@ const Input = React.forwardRef(
   ) => {
     return (
       <div className={`${Styles["ui-search"]}`}>
-        <FiSearch className={`${Styles["icon"]}`} />
+        <div className={`${Styles["search"]}`}>
+          <FiSearch className={`${Styles["icon"]}`} />
+        </div>
+
         <input
           ref={ref}
           className={`${Styles["input"]} ${className ?? ""}`}

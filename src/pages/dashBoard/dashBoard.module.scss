@@ -4,17 +4,19 @@
 @import "../../styles/__variables";
 @import "../../styles/__baseStyles";
 
-.header {
-  background-color: $lightWhite;
-  width: 100%;
+.dashBoard {
+  background-color: $inputGrey;
   @include media-breakpoint-down(sm) {
-  }
-  .profile-icon {
-    border-radius: 50%;
   }
 }
 
 [dir="ltr"] {
+  .header {
+  }
+  .title {
+    @include media-breakpoint-down(sm) {
+    }
+  }
 }
 [dir="rtl"] {
 }
