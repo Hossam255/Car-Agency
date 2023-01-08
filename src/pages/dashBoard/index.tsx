@@ -10,10 +10,10 @@ const DashBoard = () => {
   return (
     <Container className={`p-0 m-0 ${Styles["dashBoard"]}`} fluid>
       <Row className="mx-0">
-        <Col md={3} className="p-0 d-xs-none">
+        <Col md={3} xs={12} className="p-0 ">
           <Sidemenu />
         </Col>
-        <Col md={9} xs={11}>
+        <Col md={9} xs={12} className="p-0 ps-1">
           <Header />
         </Col>
       </Row>

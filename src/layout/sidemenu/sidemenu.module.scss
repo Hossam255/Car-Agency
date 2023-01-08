@@ -15,9 +15,42 @@
       border-radius: 0.3rem;
       background-color: $menutGrey;
     }
+    svg {
+      color: $greenGrey-darker;
+    }
   }
   .section-two {
     margin-top: 10rem;
+  }
+  .bar {
+    display: none !important;
+  }
+
+  @include media-breakpoint-down(sm) {
+    .logo {
+      justify-content: center;
+    }
+    .sections {
+      .section-one {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        background-color: $lightWhite;
+      }
+      .section-two {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        margin-top: 30rem;
+        background-color: $lightWhite;
+      }
+    }
+    .section-toggle {
+      display: none;
+    }
+  }
+  .bar {
+    display: block !important;
   }
 }
 [dir="ltr"] {
