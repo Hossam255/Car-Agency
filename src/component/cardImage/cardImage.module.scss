@@ -1,6 +1,30 @@
 @import "../../styles/__variables";
 @import "../../styles/__baseStyles";
 
+.cardImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem;
+  gap: 0.6rem;
+  h3 {
+    @extend .english-font;
+    color: $primaryDark;
+    font-size: 1.15rem;
+    font-weight: 400;
+  }
+  h6 {
+    @extend .english-font;
+    color: $greenGrey-darker;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  @include media-breakpoint-down(sm) {
+  }
+}
+
 [dir="ltr"] {
   .half-star {
     transform: scalex(-1);

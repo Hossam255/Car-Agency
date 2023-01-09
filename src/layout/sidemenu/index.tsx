@@ -36,7 +36,7 @@ const Sidemenu = () => {
           </div>
           <FaBars
             onClick={toggle}
-            className={`d-flex mt-2 ms-2 ${Styles["bar"]}`}
+            className={` mt-2 ms-2 ${Styles["bar"]}`}
             size={22}
           />
         </Col>

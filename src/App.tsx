@@ -12,13 +12,13 @@ function App() {
     <div className="App">
       <Header />
       <Sidemenu />
-      <CardImage
+      {/* <CardImage
         img={"/assets/cars/car-audi-a3-audi-a4-car.svg"}
         cost="$400/d"
         intro="focus"
         title="Porshe 718 Cayman S"
         date="4 manual"
-      />
+      /> */}
     </div>
   );
 }

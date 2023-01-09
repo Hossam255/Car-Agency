@@ -31,6 +31,8 @@
       justify-content: center;
     }
     .sections {
+      position: fixed;
+      z-index: 999;
       .section-one {
         position: fixed;
         width: 50%;
