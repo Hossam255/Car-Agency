@@ -6,6 +6,16 @@
 
 .dashBoard {
   background-color: $inputGrey;
+
+  .card {
+    @extend .english-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+    text-align: center;
+    background-color: $primarypurple;
+    color: $lightWhite;
+  }
   @include media-breakpoint-down(sm) {
   }
 }

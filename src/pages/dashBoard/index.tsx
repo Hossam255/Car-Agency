@@ -5,6 +5,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Sidemenu from "../../layout/sidemenu";
 import Header from "../../layout/header";
+import CircleProgress from "../../component/circleProgress";
+import MainCard from "../../component/MainCard";
 
 const DashBoard = () => {
   return (
@@ -15,6 +17,13 @@ const DashBoard = () => {
         </Col>
         <Col md={10} xs={12} className="p-0 ps-1">
           <Header />
+          <Row>
+            <Col md={3}>
+              <MainCard head={"Energy"} className={`${Styles["card"]}`}>
+                <CircleProgress />
+              </MainCard>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>
