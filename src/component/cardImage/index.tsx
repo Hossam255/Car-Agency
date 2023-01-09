@@ -41,7 +41,7 @@ const CardImage = React.forwardRef(
     };
     return (
       <Container className={`${Styles["cardImg"]}`}>
-        <MainCard bordered={true}>
+        <MainCard>
           <Row>
             <Col md={10}>
               <h3>{title}</h3>

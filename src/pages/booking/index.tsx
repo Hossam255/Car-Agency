@@ -20,12 +20,12 @@ const Booking = () => {
         </Col>
         <Col md={10} xs={12} className="p-0 ps-1">
           <Header />
-          <Row>
+          <Row className="mx-0">
             <Col className="ms-4 mt-3">
               <TitleHeader type="title" text="Booking" />
             </Col>
           </Row>
-          <Row>
+          <Row className="mx-0">
             <Col md={6} className="d-flex">
               <DropDown title="New" options={[{ text: "New", eventKey: 1 }]} />
               <DropDown
@@ -39,8 +39,8 @@ const Booking = () => {
               </div>
             </Col>
           </Row>
-          <Row>
-            <Col md={4}>
+          <Row className="mx-0">
+            <Col md={12}>
               {CarsData.map((car, i) => {
                 return (
                   <CardImage
