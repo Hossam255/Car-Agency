@@ -17,7 +17,7 @@ import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 
 const Sidemenu = () => {
-  const [sideOpen, setSideOpen] = useState(false);
+  const [sideOpen, setSideOpen] = useState(true);
 
   const toggle = () => {
     setSideOpen(!sideOpen);

@@ -9,15 +9,16 @@ import { CarsData } from "../../data/cars";
 import CardImage from "../../component/cardImage";
 import TitleHeader from "../../component/titleHeader";
 import { RxDashboard } from "react-icons/rx";
+import DropDown from "../../component/dropDowan";
 
 const Booking = () => {
   return (
     <Container className={`p-0 m-0 ${Styles["booking"]}`} fluid>
       <Row className="mx-0">
-        <Col md={3} xs={12} className="p-0 ">
+        <Col md={2} xs={12} className="p-0 ">
           <Sidemenu />
         </Col>
-        <Col md={9} xs={12} className="p-0 ps-1">
+        <Col md={10} xs={12} className="p-0 ps-1">
           <Header />
           <Row>
             <Col className="ms-4 mt-3">
@@ -25,7 +26,13 @@ const Booking = () => {
             </Col>
           </Row>
           <Row>
-            <Col md={6}></Col>
+            <Col md={6} className="d-flex">
+              <DropDown title="New" options={[{ text: "New", eventKey: 1 }]} />
+              <DropDown
+                title="Toyota"
+                options={[{ text: "Toyota", eventKey: 1 }]}
+              />
+            </Col>
             <Col md={6}>
               <div className={`${Styles["icon"]}`}>
                 <RxDashboard size={22} />

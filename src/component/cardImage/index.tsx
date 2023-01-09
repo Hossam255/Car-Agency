@@ -1,5 +1,5 @@
 import Styles from "./cardImage.module.scss";
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -35,6 +35,10 @@ const CardImage = React.forwardRef(
     }: CardImageProps,
     ref: React.Ref<HTMLHeadingElement>
   ) => {
+    const [isLike, setIsLike] = useState(false);
+    const toggle = () => {
+      setIsLike(!isLike);
+    };
     return (
       <Container className={`${Styles["cardImg"]}`}>
         <MainCard bordered={true}>
@@ -43,7 +47,13 @@ const CardImage = React.forwardRef(
               <h3>{title}</h3>
             </Col>
             <Col md={2} className="">
-              <AiOutlineHeart />
+              <div onClick={toggle}>
+                {isLike ? (
+                  <AiOutlineHeart />
+                ) : (
+                  <AiTwotoneHeart className={`${Styles["icon"]}`} />
+                )}
+              </div>
             </Col>
           </Row>
           <Row>

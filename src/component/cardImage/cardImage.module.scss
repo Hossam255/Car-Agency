@@ -20,6 +20,10 @@
     font-size: 1rem;
     font-weight: 400;
   }
+  .icon {
+    color: $redHart;
+    cursor: pointer;
+  }
 
   @include media-breakpoint-down(sm) {
   }
