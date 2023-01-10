@@ -7,6 +7,7 @@ import Sidemenu from "../../layout/sidemenu";
 import Header from "../../layout/header";
 import CircleProgress from "../../component/circleProgress";
 import MainCard from "../../component/MainCard";
+import CardImageDash from "../../component/cardImageDash";
 
 const DashBoard = () => {
   return (
@@ -73,6 +74,24 @@ const DashBoard = () => {
                   pathColor={`rgb(246,204,13 ${25 / 100})`}
                 />
               </MainCard>
+            </Col>
+          </Row>
+          <Row></Row>
+          <Row>
+            <Col md={4}>
+              <div className={`${Styles["cardDash"]}`}>
+                <CardImageDash
+                  icon="/assets/icons/return.svg"
+                  subtitle="64% Recommend"
+                  img="/assets/cars/cruze.svg"
+                  title="Mini Cooper"
+                  iconImge="/assets/icons/Vector.svg"
+                  number="132k"
+                  gear="/assets/icons/gear.svg"
+                  lastImg="/assets/icons/light.svg"
+                  cost="$32/h"
+                />
+              </div>
             </Col>
           </Row>
         </Col>

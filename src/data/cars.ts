@@ -99,3 +99,17 @@ export const CarsData = [
     fuel: "/d",
   },
 ];
+
+export const CarsDatadash = [
+  {
+    icon: "/assets/icons/return.svg",
+    subtitle: "64% Recommend",
+    img: "/assets/cars/cruze.svg",
+    title: "Mini Cooper",
+    iconImge: "/assets/icons/Vector.svg",
+    number: "132k",
+    gear: "/assets/icons/gear.svg",
+    lastImg: "/assets/icons/light.svg",
+    cost: "$32/h",
+  },
+];
