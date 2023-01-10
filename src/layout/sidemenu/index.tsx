@@ -15,6 +15,7 @@ import { RiScissors2Line } from "react-icons/ri";
 import { TbSettings } from "react-icons/tb";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sidemenu = () => {
   const [sideOpen, setSideOpen] = useState(true);
@@ -48,21 +49,32 @@ const Sidemenu = () => {
       >
         <section className={` d-md-block ${Styles["section-one"]}`}>
           <Row>
-            <Col md={7} className={`d-flex mt-5 ms-4 ${Styles["icons"]}`}>
-              <RxDashboard size={19} />
-              <TitleHeader type="smaller" text="Dashboard" className=" ms-2" />
+            <Col md={7}>
+              <Link className={`d-flex mt-5 ms-3 ${Styles["icons"]}`} to={`/`}>
+                <RxDashboard size={19} />
+                <TitleHeader
+                  type="smaller"
+                  text="Dashboard"
+                  className=" ms-2"
+                />
+              </Link>
             </Col>
           </Row>
           <Row>
-            <Col md={7} className={`d-flex mt-1 ms-4 ${Styles["icons"]}`}>
+            <Col md={7} className={`d-flex mt-1 ${Styles["icons"]}`}>
               <img src="/assets/icons/Shape.svg" alt="" />
               <TitleHeader type="smaller" text="Assets" className="mt-2 ms-2" />
             </Col>
           </Row>
           <Row>
-            <Col md={6} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
-              <BiCar size={20} />
-              <TitleHeader type="smaller" text="Booking" className=" ms-2" />
+            <Col md={6}>
+              <Link
+                className={`d-flex mt-2 ms-3 ${Styles["icons"]}`}
+                to={`/booking`}
+              >
+                <BiCar size={20} />
+                <TitleHeader type="smaller" text="Booking" className=" ms-2" />
+              </Link>
             </Col>
           </Row>
           <Row>

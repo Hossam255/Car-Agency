@@ -18,9 +18,60 @@ const DashBoard = () => {
         <Col md={10} xs={12} className="p-0 ps-1">
           <Header />
           <Row>
-            <Col md={3}>
-              <MainCard head={"Energy"} className={`${Styles["card"]}`}>
-                <CircleProgress />
+            <Col md={3} className={`mt-4 ms-3 ${Styles["circle"]}`}>
+              <MainCard className={`${Styles["card"]}`}>
+                <div className={`${Styles["img"]}`}>
+                  <img src="/assets/icons/lightning.svg" alt="" />
+                </div>
+                <h3>Energy</h3>
+                <CircleProgress
+                  trailColor="#f4f5f9"
+                  percentageNum={45}
+                  textcolor="#fff"
+                  pathColor={`rgba(255,255,255, ${45 / 100})`}
+                />
+              </MainCard>
+            </Col>
+            <Col md={3} className={`mt-4 ${Styles["circle"]}`}>
+              <MainCard className={`${Styles["card-2"]}`}>
+                <div className={` ${Styles["img-2"]}`}>
+                  <img src="/assets/icons/range.svg" alt="" />
+                </div>
+                <h3>Range</h3>
+                <CircleProgress
+                  trailColor="#f4f5f9"
+                  percentageNum={157}
+                  textcolor="#242731"
+                  pathColor={`rgba(255,126,134, ${157 / 300})`}
+                />
+              </MainCard>
+            </Col>
+            <Col md={3} className={`mt-4 ${Styles["circle"]}`}>
+              <MainCard className={`${Styles["card-3"]}`}>
+                <div className={` ${Styles["img-3"]}`}>
+                  <img src="/assets/icons/oil.svg" alt="" />
+                </div>
+                <h3>Break fluid</h3>
+                <CircleProgress
+                  trailColor="#f4f5f9"
+                  percentageNum={9}
+                  textcolor="#242731"
+                  pathColor={`rgba(102,51,153, ${9 / 100})`}
+                />
+              </MainCard>
+            </Col>
+            <Col md={3} className={`mt-4 ${Styles["circle"]}`}>
+              <MainCard className={`${Styles["card-4"]}`}>
+                <div className={` ${Styles["img-4"]}`}>
+                  <img src="/assets/icons/tire.svg" alt="" />
+                </div>
+                <h3>Tire wear</h3>
+                <CircleProgress
+                  trailColor="#f4f5f9"
+                  percentageNum={25}
+                  textcolor="#242731"
+                  pathColor={`rgb(246,204,13 ${25 / 100})`}
+                />
               </MainCard>
             </Col>
           </Row>

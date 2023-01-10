@@ -5,7 +5,6 @@
 @import "../../styles/__baseStyles";
 
 .circle {
-  background-color: $primarypurple;
   width: 100%;
   @include media-breakpoint-down(sm) {
   }

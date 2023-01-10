@@ -8,16 +8,149 @@
   background-color: $inputGrey;
 
   .card {
+    background-color: $primarypurple;
+    border-radius: 5%;
+    width: 14.5rem;
+    height: 20rem;
+    h3 {
+      @extend .english-font;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.9rem;
+      text-align: center;
+      color: $lightWhite;
+      margin-bottom: 2rem;
+    }
+    .img {
+      border-radius: 50%;
+      background-color: $lightpurple;
+      height: 3rem;
+      width: 3rem;
+      margin-bottom: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      margin-bottom: 2rem;
+      transform: translate(0, 1rem);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+  }
+}
+
+.card-2 {
+  background-color: $lightWhite;
+  border-radius: 5%;
+
+  width: 14.5rem;
+  height: 20rem;
+  h3 {
     @extend .english-font;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.9rem;
     text-align: center;
-    background-color: $primarypurple;
-    color: $lightWhite;
+    color: $primaryDark;
+    margin-bottom: 2rem;
   }
-  @include media-breakpoint-down(sm) {
+
+  .img-2 {
+    border-radius: 50%;
+    background-color: $pinkCircle;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+  img {
+    margin-bottom: 2rem;
+    transform: translate(0, 1rem);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.card-3 {
+  background-color: $lightWhite;
+  border-radius: 5%;
+
+  width: 14.5rem;
+  height: 20rem;
+  h3 {
+    @extend .english-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+    text-align: center;
+    color: $primaryDark;
+    margin-bottom: 2rem;
+  }
+
+  .img-3 {
+    border-radius: 50%;
+    background-color: $primaryCircle;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img {
+    margin-bottom: 2rem;
+    transform: translate(0, 1rem);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.card-4 {
+  background-color: $lightWhite;
+  border-radius: 5%;
+
+  width: 14.5rem;
+  height: 20rem;
+  h3 {
+    @extend .english-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+    text-align: center;
+    color: $primaryDark;
+    margin-bottom: 2rem;
+  }
+
+  .img-4 {
+    border-radius: 50%;
+    background-color: $yellowCircle;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img {
+    margin-bottom: 2rem;
+    transform: translate(0, 1rem);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.circle {
+  width: 17.5rem;
 }
 
 [dir="ltr"] {

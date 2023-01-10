@@ -10,10 +10,14 @@
   .icons {
     padding: 0.5rem 0.52rem;
     cursor: pointer;
+    text-decoration: none;
     &:active,
     &:hover {
       border-radius: 0.3rem;
       background-color: $menutGrey;
+    }
+    img {
+      margin-left: 1.8rem;
     }
     svg {
       color: $greenGrey-darker;
