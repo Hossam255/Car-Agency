@@ -22,6 +22,9 @@
     svg {
       color: $greenGrey-darker;
     }
+    .rotate-180 {
+      transform: rotate(180deg);
+    }
   }
   .section-two {
     margin-top: 10rem;
@@ -54,9 +57,9 @@
     .section-toggle {
       display: none;
     }
-  }
-  .bar {
-    display: block !important;
+    .bar {
+      display: block !important;
+    }
   }
 }
 [dir="ltr"] {

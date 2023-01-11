@@ -12,7 +12,7 @@ import {
 } from "react-icons/bi";
 import { BsCart2, BsCalendar4Range } from "react-icons/bs";
 import { RiScissors2Line } from "react-icons/ri";
-import { TbSettings } from "react-icons/tb";
+import { TbSettings, TbSteeringWheel } from "react-icons/tb";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -49,7 +49,7 @@ const Sidemenu = () => {
       >
         <section className={` d-md-block ${Styles["section-one"]}`}>
           <Row>
-            <Col md={7}>
+            <Col md={12}>
               <Link className={`d-flex mt-5 ms-3 ${Styles["icons"]}`} to={`/`}>
                 <RxDashboard size={19} />
                 <TitleHeader
@@ -61,13 +61,16 @@ const Sidemenu = () => {
             </Col>
           </Row>
           <Row>
-            <Col md={7} className={`d-flex mt-1 ${Styles["icons"]}`}>
-              <img src="/assets/icons/Shape.svg" alt="" />
-              <TitleHeader type="smaller" text="Assets" className="mt-2 ms-2" />
+            <Col md={12} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
+              <TbSteeringWheel
+                size={20}
+                className={`${Styles["rotate-180"]}`}
+              />
+              <TitleHeader type="smaller" text="Assets" className=" ms-2" />
             </Col>
           </Row>
           <Row>
-            <Col md={6}>
+            <Col md={12}>
               <Link
                 className={`d-flex mt-2 ms-3 ${Styles["icons"]}`}
                 to={`/booking`}
@@ -78,31 +81,31 @@ const Sidemenu = () => {
             </Col>
           </Row>
           <Row>
-            <Col md={6} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
+            <Col md={12} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
               <BiShoppingBag size={20} />
               <TitleHeader type="smaller" text="Sell Cars" className=" ms-2" />
             </Col>
           </Row>
           <Row>
-            <Col md={6} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
+            <Col md={12} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
               <BsCart2 size={20} />
               <TitleHeader type="smaller" text="Buy Cars" className=" ms-2" />
             </Col>
           </Row>
           <Row>
-            <Col md={6} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
+            <Col md={12} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
               <RiScissors2Line size={20} />
               <TitleHeader type="smaller" text="Services" className=" ms-2" />
             </Col>
           </Row>
           <Row>
-            <Col md={6} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
+            <Col md={12} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
               <BsCalendar4Range size={20} />
               <TitleHeader type="smaller" text="Calender" className=" ms-2" />
             </Col>
           </Row>
           <Row>
-            <Col md={6} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
+            <Col md={12} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
               <BiMessageDetail size={20} />
               <TitleHeader type="smaller" text="Message" className=" ms-2" />
             </Col>
@@ -110,13 +113,13 @@ const Sidemenu = () => {
         </section>
         <section className={` d-md-block ${Styles["section-two"]}`}>
           <Row>
-            <Col md={6} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
+            <Col md={12} className={`d-flex mt-2 ms-4 ${Styles["icons"]}`}>
               <TbSettings size={20} />
               <TitleHeader type="smaller" text="Setting" className=" ms-2" />
             </Col>
           </Row>
           <Row>
-            <Col md={6} className={`d-flex mt-3 ms-4 ${Styles["icons"]}`}>
+            <Col md={12} className={`d-flex mt-3 ms-4 ${Styles["icons"]}`}>
               <BiLogOut size={20} />
               <TitleHeader type="smaller" text="Log out" className=" ms-2" />
             </Col>

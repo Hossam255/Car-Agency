@@ -33,18 +33,19 @@ const Booking = () => {
                 options={[{ text: "Toyota", eventKey: 1 }]}
               />
             </Col>
-            <Col md={6}>
-              <div className={`${Styles["icon"]}`}>
+            <Col md={6} className="justify-content-end d-flex">
+              <div
+                className={`justify-content-center d-flex algin-items-center ${Styles["icon"]}`}
+              >
                 <RxDashboard size={22} />
               </div>
             </Col>
           </Row>
           <Row className="mx-0">
-            <Col md={12}>
-              {CarsData.map((car, i) => {
-                return (
+            {CarsData.map((car, i) => {
+              return (
+                <Col key={i} md={4} className="p-0 p-2">
                   <CardImage
-                    key={i}
                     title={car.title}
                     subtitle={car.subTitle}
                     img={car.img}
@@ -55,9 +56,9 @@ const Booking = () => {
                     cost={car.cost}
                     fuel={car.fuel}
                   />
-                );
-              })}
-            </Col>
+                </Col>
+              );
+            })}
           </Row>
         </Col>
       </Row>

@@ -11,6 +11,7 @@ export type CircleProgressProps = {
   trailColor: string;
   pathColor: string;
   textcolor: string;
+  option: string[];
 };
 
 const CircleProgress = React.forwardRef(
@@ -21,7 +22,6 @@ const CircleProgress = React.forwardRef(
       trailColor,
       pathColor,
       textcolor,
-      Option,
     }: CircleProgressProps,
     ref: any
   ) => {
@@ -29,7 +29,7 @@ const CircleProgress = React.forwardRef(
       <Container className={`p-0 m-0 ${Styles["header"]}`} fluid>
         <Row className=" mx-0 ">
           <Col>
-            <Chart options={Option} type="bar" width={500} height={320} />
+            <Chart type="bar" width={500} height={320} />
           </Col>
         </Row>
       </Container>

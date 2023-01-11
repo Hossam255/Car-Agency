@@ -40,8 +40,8 @@ const CardImage = React.forwardRef(
       setIsLike(!isLike);
     };
     return (
-      <Container className={`${Styles["cardImg"]}`}>
-        <MainCard>
+      <MainCard>
+        <Container className={`${Styles["cardImg"]}`}>
           <Row>
             <Col md={10}>
               <h3>{title}</h3>
@@ -63,26 +63,26 @@ const CardImage = React.forwardRef(
           </Row>
           <Row>
             <Col md={12}>
-              <img src={img} alt="" />
+              <img src={img} className={`${Styles["car"]}`} alt="" />
             </Col>
           </Row>
           <Row className="mx-0 mt-2">
-            <Col md={8}>
-              <span>
+            <Col md={8} className="d-flex">
+              <div>
                 <img src={iconImg} alt="" />
-              </span>
-              <span className="ms-1">{number}</span>
-              <span className="ms-2">
+              </div>
+              <div className="ms-1 mt-1">{number}</div>
+              <div className="ms-2 mt-1">
                 <img src={sImg} alt="" />
-              </span>
-              <h6 className="ms-1">{gear}</h6>
+              </div>
+              <h6 className="ms-1 mt-2">{gear}</h6>
             </Col>
-            <Col md={4}>
-              <span>{cost}</span> <span>{fuel}</span>
+            <Col md={4} className="d-flex">
+              <div>{cost}</div> <div>{fuel}</div>
             </Col>
           </Row>
-        </MainCard>
-      </Container>
+        </Container>
+      </MainCard>
     );
   }
 );
