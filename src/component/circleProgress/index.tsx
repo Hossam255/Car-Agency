@@ -9,6 +9,7 @@ import "react-circular-progressbar/dist/styles.css";
 export type CircleProgressProps = {
   className?: string;
   percentageNum: number;
+  text: string;
   trailColor: string;
   pathColor: string;
   textcolor: string;
@@ -22,6 +23,7 @@ const CircleProgress = React.forwardRef(
       trailColor,
       pathColor,
       textcolor,
+      text,
     }: CircleProgressProps,
     ref: any
   ) => {
@@ -32,7 +34,7 @@ const CircleProgress = React.forwardRef(
             <CircularProgressbar
               className={`${Styles["circle"]}`}
               value={percentageNum}
-              text={`${percentageNum} %`}
+              text={`${text} %`}
               circleRatio={0.7}
               styles={{
                 trail: {

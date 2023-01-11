@@ -6,7 +6,15 @@
 
 .sidebar {
   background-color: $lightWhite;
+  height: 100vh;
+  position: fixed;
 
+  @include media-breakpoint-up(md) {
+    width: 14rem;
+  }
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
   .icons {
     padding: 0.5rem 0.52rem;
     cursor: pointer;
@@ -38,18 +46,10 @@
       justify-content: center;
     }
     .sections {
-      position: fixed;
-      z-index: 999;
       .section-one {
-        position: fixed;
-        width: 50%;
-        height: 100%;
         background-color: $lightWhite;
       }
       .section-two {
-        position: fixed;
-        width: 50%;
-        height: 100%;
         margin-top: 30rem;
         background-color: $lightWhite;
       }

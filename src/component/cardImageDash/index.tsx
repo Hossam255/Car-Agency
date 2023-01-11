@@ -37,8 +37,8 @@ const CardImageDash = React.forwardRef(
     ref: React.Ref<HTMLHeadingElement>
   ) => {
     return (
-      <Container className={`${Styles["cardImg"]}`}>
-        <MainCard>
+      <MainCard className={`${className}`}>
+        <Container className={`${Styles["cardImg"]}`}>
           <Row>
             <Col md={2} className="">
               <img src={icon} alt="" />
@@ -52,30 +52,29 @@ const CardImageDash = React.forwardRef(
               <img src={img} alt="" />
             </Col>
           </Row>
-          <Row>
-            <Col md={12}>
-              <h6>{title}</h6>
-            </Col>
-          </Row>
-
           <Row className="mx-0 mt-2">
-            <Col md={10}>
-              <span>
-                <img src={iconImge} alt="" />
-              </span>
-              <span className="ms-1">{number}</span>
-              <span className="ms-2">
-                <img src={sImg} alt="" />
-              </span>
-              <img src={gear} alt="" />
-              <img src={lastImg} alt="" />
+            <Col md={9}>
+              <Row className="mx-0">
+                <Col className="p-0">
+                  <h6>{title}</h6>
+                </Col>
+              </Row>
+              <Row className="mx-0">
+                <Col className="p-0 d-flex" xs={12}>
+                  <img className="me-2" src={iconImge} alt="" />
+                  <div className="me-2">{number}</div>
+                  <img className="me-2" src={sImg} alt="" />
+                  <img className="me-2" src={gear} alt="" />
+                  <img className="me-2" src={lastImg} alt="" />
+                </Col>
+              </Row>
             </Col>
-            <Col md={2}>
-              <span>{cost}</span>
+            <Col md={3} className="d-flex align-items-end">
+              <div>{cost}</div>
             </Col>
           </Row>
-        </MainCard>
-      </Container>
+        </Container>
+      </MainCard>
     );
   }
 );

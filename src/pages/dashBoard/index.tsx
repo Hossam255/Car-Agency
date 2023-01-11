@@ -8,6 +8,7 @@ import Header from "../../layout/header";
 import CircleProgress from "../../component/circleProgress";
 import MainCard from "../../component/MainCard";
 import CardImageDash from "../../component/cardImageDash";
+import BarCart from "../../component/charts";
 
 const DashBoard = () => {
   return (
@@ -28,6 +29,7 @@ const DashBoard = () => {
                 <CircleProgress
                   trailColor="#f4f5f9"
                   percentageNum={45}
+                  text={"45"}
                   textcolor="#fff"
                   pathColor={`rgba(255,255,255, ${45 / 100})`}
                 />
@@ -41,7 +43,8 @@ const DashBoard = () => {
                 <h3>Range</h3>
                 <CircleProgress
                   trailColor="#f4f5f9"
-                  percentageNum={157}
+                  percentageNum={30}
+                  text={"157k"}
                   textcolor="#242731"
                   pathColor={`rgba(255,126,134, ${157 / 300})`}
                 />
@@ -56,6 +59,7 @@ const DashBoard = () => {
                 <CircleProgress
                   trailColor="#f4f5f9"
                   percentageNum={9}
+                  text={"9"}
                   textcolor="#242731"
                   pathColor={`rgba(102,51,153, ${9 / 100})`}
                 />
@@ -70,29 +74,33 @@ const DashBoard = () => {
                 <CircleProgress
                   trailColor="#f4f5f9"
                   percentageNum={25}
+                  text={"25"}
                   textcolor="#242731"
-                  pathColor={`rgb(246,204,13 ${25 / 100})`}
+                  pathColor={"#F6CC0D"}
                 />
               </MainCard>
             </Col>
           </Row>
-          <Row></Row>
+          <Row>
+            <Col md={6}>
+              <BarCart />
+            </Col>
+            <Col md={6}></Col>
+          </Row>
           <Row>
             <Col md={4}>
-              <div className={`${Styles["cardDash"]}`}>
-                <CardImageDash
-                  className={`${Styles["cardDashImg"]}`}
-                  icon="/assets/icons/return.svg"
-                  subtitle="64% Recommend"
-                  img="/assets/cars/cruze.svg"
-                  title="Mini Cooper"
-                  iconImge="/assets/icons/Vector.svg"
-                  number="132k"
-                  gear="/assets/icons/gear.svg"
-                  lastImg="/assets/icons/light.svg"
-                  cost="$32/h"
-                />
-              </div>
+              <CardImageDash
+                className={`${Styles["background-tertiary"]}`}
+                icon="/assets/icons/return.svg"
+                subtitle="64% Recommend"
+                img="/assets/cars/cruze.svg"
+                title="Mini Cooper"
+                iconImge="/assets/icons/Vector.svg"
+                number="132k"
+                gear="/assets/icons/gear.svg"
+                lastImg="/assets/icons/light.svg"
+                cost="$32/h"
+              />
             </Col>
           </Row>
         </Col>
