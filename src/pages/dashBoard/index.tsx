@@ -81,6 +81,7 @@ const DashBoard = () => {
             <Col md={4}>
               <div className={`${Styles["cardDash"]}`}>
                 <CardImageDash
+                  className={`${Styles["cardDashImg"]}`}
                   icon="/assets/icons/return.svg"
                   subtitle="64% Recommend"
                   img="/assets/cars/cruze.svg"

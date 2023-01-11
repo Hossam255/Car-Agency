@@ -67,7 +67,7 @@ const CardImageDash = React.forwardRef(
               <span className="ms-2">
                 <img src={sImg} alt="" />
               </span>
-              <h6 className="ms-1">{gear}</h6>
+              <img src={gear} alt="" />
               <img src={lastImg} alt="" />
             </Col>
             <Col md={2}>

@@ -111,5 +111,6 @@ export const CarsDatadash = [
     gear: "/assets/icons/gear.svg",
     lastImg: "/assets/icons/light.svg",
     cost: "$32/h",
+    background: "#e1dfa4",
   },
 ];
