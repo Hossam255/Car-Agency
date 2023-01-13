@@ -49,9 +49,9 @@ const CardImage = React.forwardRef(
             <Col md={2} className="">
               <div onClick={toggle}>
                 {isLike ? (
-                  <AiOutlineHeart />
+                  <AiOutlineHeart size={25} />
                 ) : (
-                  <AiTwotoneHeart className={`${Styles["icon"]}`} />
+                  <AiTwotoneHeart size={25} className={`${Styles["icon"]}`} />
                 )}
               </div>
             </Col>

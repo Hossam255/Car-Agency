@@ -7,11 +7,17 @@
 .dashBoard {
   background-color: $inputGrey;
 
+  .circle {
+    width: 21.5rem;
+  }
+
   .card {
     background-color: $primarypurple;
     border-radius: 5%;
-    width: 14.5rem;
-    height: 20rem;
+    width: 18.4rem;
+    height: 23rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     h3 {
       @extend .english-font;
       font-size: 1.5rem;
@@ -47,9 +53,11 @@
 .card-2 {
   background-color: $lightWhite;
   border-radius: 5%;
+  width: 18.4rem;
+  height: 23rem;
 
-  width: 14.5rem;
-  height: 20rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   h3 {
     @extend .english-font;
     font-size: 1.5rem;
@@ -82,9 +90,10 @@
 .card-3 {
   background-color: $lightWhite;
   border-radius: 5%;
-
-  width: 14.5rem;
-  height: 20rem;
+  width: 18.4rem;
+  height: 23rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   h3 {
     @extend .english-font;
     font-size: 1.5rem;
@@ -114,12 +123,18 @@
   }
 }
 
+.isSideOpen {
+  width: 100vw;
+  z-index: 9999;
+}
+
 .card-4 {
   background-color: $lightWhite;
   border-radius: 5%;
-
-  width: 14.5rem;
-  height: 20rem;
+  width: 18.4rem;
+  height: 23rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   h3 {
     @extend .english-font;
     font-size: 1.5rem;
@@ -149,10 +164,96 @@
   }
 }
 
-.circle {
-  width: 17.5rem;
+.firstChart {
+  h2 {
+    @extend .english-font;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.65rem;
+    color: $primaryDark;
+  }
+  span {
+    @extend .english-font;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.65rem;
+    color: $primaryDark;
+    margin-left: 0.5rem;
+    margin-top: 0.17rem;
+  }
+  button {
+    background-color: $lightWhite;
+    margin-right: 0.5rem;
+    border-radius: 1.5rem;
+    @extend .english-font;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    color: $darkBlack-flash;
+    border: none;
+    padding: 0.5rem 1rem;
+
+    &:hover,
+    &:active {
+      background-color: $blueButton;
+      color: $lightWhite;
+    }
+  }
+  p {
+    @extend .english-font;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    color: $darkBlack-flash;
+  }
 }
 
+.secondChart {
+  h2 {
+    @extend .english-font;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.65rem;
+    color: $primaryDark;
+  }
+  span {
+    @extend .english-font;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.65rem;
+    color: $primaryDark;
+    margin-left: 0.5rem;
+    margin-top: 0.17rem;
+  }
+  .dates {
+    background-color: $inputGrey;
+    border-radius: 0.625rem;
+  }
+  button {
+    background-color: $inputGrey;
+    margin-right: 0.5rem;
+    border-radius: 1.5rem;
+    @extend .english-font;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    border: none;
+    padding: 0.5rem 1rem;
+
+    &:hover,
+    &:active {
+      background-color: $secondery-orange;
+      color: $lightWhite;
+    }
+  }
+  p {
+    @extend .english-font;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    color: $darkBlack-flash;
+  }
+}
 .background-tertiary {
   background-color: $tertiary;
 }

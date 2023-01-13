@@ -9,6 +9,7 @@ import { CarsData } from "../../data/cars";
 import CardImage from "../../component/cardImage";
 import TitleHeader from "../../component/titleHeader";
 import { RxDashboard } from "react-icons/rx";
+import { BsFilterRight } from "react-icons/bs";
 import DropDown from "../../component/dropDowan";
 
 const Booking = () => {
@@ -35,9 +36,14 @@ const Booking = () => {
             </Col>
             <Col md={6} className="justify-content-end d-flex">
               <div
-                className={`justify-content-center d-flex algin-items-center ${Styles["icon"]}`}
+                className={`justify-content-center d-flex align-items-center ${Styles["icon"]}`}
               >
                 <RxDashboard size={22} />
+              </div>
+              <div
+                className={`justify-content-center d-flex align-items-center ${Styles["filterIcon"]}`}
+              >
+                <BsFilterRight size={22} />
               </div>
             </Col>
           </Row>

@@ -1,0 +1,19 @@
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "../../styles/__variables";
+@import "../../styles/__baseStyles";
+
+.circle {
+  width: 100%;
+  @include media-breakpoint-down(sm) {
+  }
+  .profile-icon {
+    border-radius: 50%;
+  }
+}
+
+[dir="ltr"] {
+}
+[dir="rtl"] {
+}

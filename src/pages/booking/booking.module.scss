@@ -14,17 +14,15 @@
     background-color: $lightWhite;
     border-radius: 50%;
   }
+
   @include media-breakpoint-down(sm) {
   }
 }
-
-[dir="ltr"] {
-  .header {
-  }
-  .title {
-    @include media-breakpoint-down(sm) {
-    }
-  }
-}
-[dir="rtl"] {
+.filterIcon {
+  margin-left: 1rem;
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: $purpple;
 }

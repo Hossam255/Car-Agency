@@ -8,19 +8,7 @@ import MainCard from "./component/MainCard";
 import CardImage from "./component/cardImage";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Sidemenu />
-      {/* <CardImage
-        img={"/assets/cars/car-audi-a3-audi-a4-car.svg"}
-        cost="$400/d"
-        intro="focus"
-        title="Porshe 718 Cayman S"
-        date="4 manual"
-      /> */}
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;

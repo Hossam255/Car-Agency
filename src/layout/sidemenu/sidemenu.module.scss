@@ -10,7 +10,7 @@
   position: fixed;
 
   @include media-breakpoint-up(md) {
-    width: 14rem;
+    width: 18.7rem;
   }
   @include media-breakpoint-down(md) {
     width: 100%;
@@ -42,6 +42,10 @@
   }
 
   @include media-breakpoint-down(sm) {
+    .sidebar {
+      position: fixed;
+      width: 100%;
+    }
     .logo {
       justify-content: center;
     }
@@ -54,15 +58,14 @@
         background-color: $lightWhite;
       }
     }
-    .section-toggle {
-      display: none;
-    }
+
     .bar {
       display: block !important;
     }
   }
 }
-[dir="ltr"] {
-}
-[dir="rtl"] {
+
+.isSideOpen {
+  width: 100vw;
+  z-index: 9999;
 }

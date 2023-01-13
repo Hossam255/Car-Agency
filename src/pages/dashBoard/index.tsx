@@ -8,7 +8,8 @@ import Header from "../../layout/header";
 import CircleProgress from "../../component/circleProgress";
 import MainCard from "../../component/MainCard";
 import CardImageDash from "../../component/cardImageDash";
-import BarCart from "../../component/charts";
+import BarCart from "../../component/charts/barChart";
+import AreaChart from "../../component/charts/areaChart";
 
 const DashBoard = () => {
   return (
@@ -19,23 +20,23 @@ const DashBoard = () => {
         </Col>
         <Col md={10} xs={12} className="p-0 ps-1">
           <Header />
-          <Row>
-            <Col md={3} className={`mt-4 ms-3 ${Styles["circle"]}`}>
+          <Row className="mx-0 justify-content-center">
+            <Col md={3} className={`my-4 ${Styles["circle"]}`}>
               <MainCard className={`${Styles["card"]}`}>
                 <div className={`${Styles["img"]}`}>
                   <img src="/assets/icons/lightning.svg" alt="" />
                 </div>
                 <h3>Energy</h3>
                 <CircleProgress
-                  trailColor="#f4f5f9"
+                  trailColor="#B37EFC"
                   percentageNum={45}
                   text={"45"}
                   textcolor="#fff"
-                  pathColor={`rgba(255,255,255, ${45 / 100})`}
+                  pathColor={`#fff`}
                 />
               </MainCard>
             </Col>
-            <Col md={3} className={`mt-4 ${Styles["circle"]}`}>
+            <Col md={3} className={`my-4 ms-4 ${Styles["circle"]}`}>
               <MainCard className={`${Styles["card-2"]}`}>
                 <div className={` ${Styles["img-2"]}`}>
                   <img src="/assets/icons/range.svg" alt="" />
@@ -43,14 +44,14 @@ const DashBoard = () => {
                 <h3>Range</h3>
                 <CircleProgress
                   trailColor="#f4f5f9"
-                  percentageNum={30}
+                  percentageNum={50}
                   text={"157k"}
                   textcolor="#242731"
-                  pathColor={`rgba(255,126,134, ${157 / 300})`}
+                  pathColor={`#FF7E86`}
                 />
               </MainCard>
             </Col>
-            <Col md={3} className={`mt-4 ${Styles["circle"]}`}>
+            <Col md={3} className={`my-4 ms-4 ${Styles["circle"]}`}>
               <MainCard className={`${Styles["card-3"]}`}>
                 <div className={` ${Styles["img-3"]}`}>
                   <img src="/assets/icons/oil.svg" alt="" />
@@ -61,11 +62,11 @@ const DashBoard = () => {
                   percentageNum={9}
                   text={"9"}
                   textcolor="#242731"
-                  pathColor={`rgba(102,51,153, ${9 / 100})`}
+                  pathColor={`#A162F7`}
                 />
               </MainCard>
             </Col>
-            <Col md={3} className={`mt-4 ${Styles["circle"]}`}>
+            <Col md={3} className={`my-4 ms-4 ${Styles["circle"]}`}>
               <MainCard className={`${Styles["card-4"]}`}>
                 <div className={` ${Styles["img-4"]}`}>
                   <img src="/assets/icons/tire.svg" alt="" />
@@ -81,13 +82,61 @@ const DashBoard = () => {
               </MainCard>
             </Col>
           </Row>
-          <Row>
-            <Col md={6}>
-              <BarCart />
+          <Row className="mx-0">
+            <Col md={6} className={`mb-5 ${Styles["firstChart"]}`}>
+              <MainCard>
+                <Row>
+                  <Col className="d-flex mb-4">
+                    <h2>Miles</h2>
+                    <span>Statistics</span>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col md={6}>
+                    <button>Day</button>
+                    <button>Week</button>
+                    <button>Month</button>
+                  </Col>
+                  <Col md={6} className="d-flex justify-content-end">
+                    <p>256 Miles</p>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <BarCart />
+                  </Col>
+                </Row>
+              </MainCard>
             </Col>
-            <Col md={6}></Col>
+            <Col md={6} className={`mb-5 ${Styles["secondChart"]}`}>
+              <MainCard>
+                <Row>
+                  <Col className="d-flex mb-4">
+                    <h2>Car</h2>
+                    <span>Statistics</span>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col md={6}>
+                    <p>20 February 2022</p>
+                  </Col>
+                  <Col md={6} className="d-flex justify-content-end">
+                    <div className={`${Styles["dates"]}`}>
+                      <button>Day</button>
+                      <button>Week</button>
+                      <button>Month</button>
+                    </div>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <AreaChart />
+                  </Col>
+                </Row>
+              </MainCard>
+            </Col>
           </Row>
-          <Row>
+          <Row className="mx-0">
             <Col md={4}>
               <CardImageDash
                 className={`${Styles["background-tertiary"]}`}
@@ -100,6 +149,34 @@ const DashBoard = () => {
                 gear="/assets/icons/gear.svg"
                 lastImg="/assets/icons/light.svg"
                 cost="$32/h"
+              />
+            </Col>
+            <Col md={4}>
+              <CardImageDash
+                className={`${Styles["background-tertiary"]}`}
+                icon="/assets/icons/return.svg"
+                subtitle="74% Recommend"
+                img="/assets/cars/maruti-suzuki-suzuki-swift-car-suzuki-9c5818c39cb279f9dc7f844d7769288f.svg"
+                title="Mini Cooper"
+                iconImge="/assets/icons/Vector.svg"
+                number="130k"
+                gear="/assets/icons/gear.svg"
+                lastImg="/assets/icons/light.svg"
+                cost="$28/h"
+              />
+            </Col>
+            <Col md={4}>
+              <CardImageDash
+                className={`${Styles["background-tertiary"]}`}
+                icon="/assets/icons/return.svg"
+                subtitle="74% Recommend"
+                img="/assets/cars/mini-countryman-car-bmw-mini-cooper-mini-406b2a24c59d99a8096f336f22982573.svg"
+                title="Mini Cooper"
+                iconImge="/assets/icons/Vector.svg"
+                number="130k"
+                gear="/assets/icons/gear.svg"
+                lastImg="/assets/icons/light.svg"
+                cost="$28/h"
               />
             </Col>
           </Row>
