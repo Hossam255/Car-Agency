@@ -4,8 +4,10 @@
 
 # **Technologies**
 ### Html , css
+### Sass(scss)
 ### TypeScript with React framework
-### React bootstrap
+### React-bootstrap
+### React-router-dom
 ### React-icons
 ### Apexcharts
 ### React-circular-progressbar
