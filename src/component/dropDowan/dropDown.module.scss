@@ -19,9 +19,3 @@
   @include media-breakpoint-down(sm) {
   }
 }
-
-[dir="ltr"] {
-  .half-star {
-    transform: scalex(-1);
-  }
-}

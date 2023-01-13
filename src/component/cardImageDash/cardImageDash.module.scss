@@ -6,13 +6,13 @@
     @extend .english-font;
     color: $primaryDark;
     font-size: 1.15rem;
-    font-weight: 400;
+    font-weight: 700;
   }
-  h6 {
+  h2 {
     @extend .english-font;
-    color: $greenGrey-darker;
-    font-size: 1rem;
-    font-weight: 400;
+    color: $darkBlack;
+    font-size: 1.3rem;
+    font-weight: 700;
   }
   .icon {
     color: $redHart;
@@ -20,11 +20,5 @@
   }
 
   @include media-breakpoint-down(sm) {
-  }
-}
-
-[dir="ltr"] {
-  .half-star {
-    transform: scalex(-1);
   }
 }

@@ -256,4 +256,14 @@
 }
 .background-tertiary {
   background-color: $tertiary;
+  @extend .english-font;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+.background-oceanBlue {
+  background-color: $oceanBlue;
+}
+.background-pinkCard {
+  background-color: $pinkCard;
 }

@@ -56,7 +56,7 @@ const CardImageDash = React.forwardRef(
             <Col md={9}>
               <Row className="mx-0">
                 <Col className="p-0">
-                  <h6>{title}</h6>
+                  <h2>{title}</h2>
                 </Col>
               </Row>
               <Row className="mx-0">

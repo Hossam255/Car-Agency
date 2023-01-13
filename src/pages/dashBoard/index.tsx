@@ -153,7 +153,7 @@ const DashBoard = () => {
             </Col>
             <Col md={4}>
               <CardImageDash
-                className={`${Styles["background-tertiary"]}`}
+                className={`${Styles["background-oceanBlue"]}`}
                 icon="/assets/icons/return.svg"
                 subtitle="74% Recommend"
                 img="/assets/cars/maruti-suzuki-suzuki-swift-car-suzuki-9c5818c39cb279f9dc7f844d7769288f.svg"
@@ -167,7 +167,7 @@ const DashBoard = () => {
             </Col>
             <Col md={4}>
               <CardImageDash
-                className={`${Styles["background-tertiary"]}`}
+                className={`${Styles["background-pinkCard"]}`}
                 icon="/assets/icons/return.svg"
                 subtitle="74% Recommend"
                 img="/assets/cars/mini-countryman-car-bmw-mini-cooper-mini-406b2a24c59d99a8096f336f22982573.svg"

@@ -7,49 +7,85 @@ export const Options1: ApexOptions | undefined = {
   series: [
     {
       name: "sales",
-      data: [110, 90, 120, 80, 110, 60, 90, 100],
+      data: [110, 90, 120, 80, 110, 60, 90],
     },
   ],
   xaxis: {
-    type: "datetime",
-    categories: [
-      "2018-09-19T13:00:00.000Z",
-      "2018-09-19T14:00:00.000Z",
-      "2018-09-19T15:00:00.000Z",
-      "2018-09-19T16:00:00.000Z",
-      "2018-09-19T17:00:00.000Z",
-      "2018-09-19T18:00:00.000Z",
-      "2018-09-19T19:00:00.000Z",
-    ],
+    type: "category",
+    categories: ["1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"],
   },
   yaxis: {
     show: false,
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  grid: {
+    show: true,
+    borderColor: "#90A4AE",
+    strokeDashArray: 0,
+    position: "back",
+    xaxis: {
+      lines: {
+        show: true,
+      },
+    },
+    yaxis: {
+      lines: {
+        show: false,
+      },
+    },
+    row: {
+      colors: undefined,
+      opacity: 0.5,
+    },
+    column: {
+      colors: undefined,
+      opacity: 0.5,
+    },
+    padding: {
+      top: 0,
+      right: 0,
+      bottom: 0,
+      left: 0,
+    },
   },
 };
 
 export const Options2: ApexOptions | undefined = {
-  chart: {
-    type: "line",
-  },
   series: [
     {
       name: "sales",
-      data: [30, 40, 35, 50, 49, 60, 70, 91, 125],
+      data: [40, 90, 120, 70, 90, 10, 30, 5],
     },
   ],
+  chart: {
+    type: "area",
+    height: 350,
+    zoom: {
+      enabled: false,
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    curve: "smooth",
+    colors: ["#FF764C", "#E91E63", "#9C27B0"],
+  },
+
+  labels: ["7am", "9am", "11am", "1pm", "3pm", "5pm", "7pm", "9pm"],
   xaxis: {
-    type: "datetime",
-    categories: [
-      "2018-09-19T00:00:00.000Z",
-      "2018-09-19T01:30:00.000Z",
-      "2018-09-19T02:30:00.000Z",
-      "2018-09-19T03:30:00.000Z",
-      "2018-09-19T04:30:00.000Z",
-      "2018-09-19T05:30:00.000Z",
-      "2018-09-19T06:30:00.000Z",
-    ],
+    type: "category",
   },
   yaxis: {
     show: false,
+    opposite: true,
+  },
+  legend: {
+    horizontalAlign: "left",
+  },
+  fill: {
+    colors: ["#F44336", "#E91E63", "#9C27B0"],
   },
 };

@@ -41,7 +41,6 @@ img.img-flip {
 }
 
 .font-placeholder-color {
-  @extend .arabic-font;
   color: $placeHolder-color;
 }
 
@@ -49,8 +48,8 @@ img.img-flip {
   cursor: pointer;
 }
 
-// @include media-breakpoint-up(sm) {
-// }
+@include media-breakpoint-up(sm) {
+}
 
-// @include media-breakpoint-down(sm) {
-// }
+@include media-breakpoint-down(sm) {
+}
