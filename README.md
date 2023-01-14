@@ -1,6 +1,6 @@
 # **About The App**
 
-### This project for car agency Dashboard
+### This project for Car Agency Dashboard
 
 # **Technologies**
 ### Html , css
